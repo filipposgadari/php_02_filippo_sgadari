@@ -3,20 +3,19 @@
 <?php
 
 $users = [
-    ['name' => 'Davide', 
-    'surname' => 'Cariola', 
-    'gender' => 'NB'],
+    ['name' => 'Davide', 'surname' => 'Cariola', 'gender' => 'NB'],
+    ['name' => 'Filippo', 'surname' => 'Rossi', 'gender' => 'M'],
+    ['name' => 'Francesca', 'surname' => 'Verdi', 'gender' => 'F'],
 ];
 
 foreach ($users as $user) {
     $gender = $user['gender'];
 
     if ($gender === 'M') {
-        echo "Buongiorno Sign. " . $user["name"] . "\n";
+        echo "Buongiorno Sign. " . $user["name"] . " " . $user["surname"] . "\n";
     }elseif ($gender === 'F') {
-        echo "Buongiorno Sign.ra " . $user["name"] . "\n";
+        echo "Buongiorno Sign.ra " . $user["name"] . " " . $user["surname"] . "\n";
     }else {
         echo "Buongiorno " . $user['name'] . " " . $user['surname'] . "\n";
     }
-    
 };
